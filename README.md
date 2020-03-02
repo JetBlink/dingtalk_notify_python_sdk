@@ -1,4 +1,4 @@
-# dingtalk_notify_python_sdk
+# Dingtalk Notify Python_sdk
 钉钉机器人通知(支持加签). dingtalk robot notification python sdk.
 
 ## Installation
@@ -16,7 +16,7 @@ dt = DingTalkRobot('token', 'sec')
 dt.send_text('this is a test message')
 ```
 
-## pypi upload Notice 
+## Pypi Upload Notice 
 
 * 安装依赖
 
