@@ -15,3 +15,30 @@ from dingtalk.ding_talk import DingTalkRobot
 dt = DingTalkRobot('token', 'sec')
 dt.send_text('this is a test message')
 ```
+
+## pypi upload Notice 
+
+* 安装依赖
+
+```
+python3 -m pip install --user --upgrade setuptools wheel twine
+
+```
+
+* 校验
+
+```
+python3 setup.py check
+```
+
+* 打包
+
+```
+python3 setup.py sdist bdist_wheel
+```
+
+* 上传发布
+
+```
+python3 -m twine upload  dist/*
+```
