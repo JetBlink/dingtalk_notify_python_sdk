@@ -4,13 +4,13 @@
 ## Installation
 
 ```
-pip3 install ding_talk_robot
+pip3 install dingtalk_notify
 ```
 
 ## Usage
 
 ```
-from dingtalk.ding_talk import DingTalkRobot
+from dingtalk_notify.ding_talk import DingTalkRobot
 
 dt = DingTalkRobot('token', 'sec')
 dt.send_text('this is a test message')
