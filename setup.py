@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='ding_talk_robot',
+    name='dingtalk_notify',
     url='https://github.com/JetBlink/dingtalk_notify_python_sdk',
     author='sh7ning',
     author_email='sh7ning@qq.com',
