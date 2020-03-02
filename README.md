@@ -6,3 +6,12 @@
 ```
 pip3 install ding_talk_robot
 ```
+
+## Usage
+
+```
+from dingtalk.ding_talk import DingTalkRobot
+
+dt = DingTalkRobot('token', 'sec')
+dt.send_text('this is a test message')
+```
