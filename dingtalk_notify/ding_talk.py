@@ -35,7 +35,9 @@ class DingTalkRobot(object):
         hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
         return quote_plus(base64.b64encode(hmac_code))
 
-    def send_text(self, msg, is_at_all=False, at_mobiles=[]):
+        def send_text(self, msg, is_at_all=False, at_mobiles=None):
+        if at_mobiles is None:
+            at_mobiles = []
         data = {"msgtype": "text", "text": {"content": msg}, "at": {"atMobiles": at_mobiles, "isAtAll": is_at_all}}
         return self.post(data)
 
